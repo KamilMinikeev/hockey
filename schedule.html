@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body id="schedule-body">
+
+
+    <div class="wrapper">
+
+        <main class="main">
+
+            <header class="header header-schedule">
+                <nav class="nav nav-about ">
+                    <div class="header__top top-header fix">
+                        <div class="container">
+                            <div class="top-header__content">
+                                <div class="top-header__logo">
+                                    <a href="#" class="logo"><img src="images/logo.png" alt="" class="logo__img">
+                                    </a>
+                                    <div class="top-header__logo-item">
+                                        <h3 class="top-header__logo-title">Хоккейная школа
+                                            “Красная Ракета”
+                                        </h3>
+                                        <p class="top-header__logo-text">Санкт-Петербург</p>
+                                    </div>
+                                </div>
+                                <div class="top-header__contacts">
+                                    <div class="top-header__social">
+                                        <div class="top-header__social-links">
+                                            <ul class="top-header__social-list">
+                                                <li class="top-header__social-item"><a href="#"
+                                                        class="top-header__social-link"><img src="images/whatsapp.svg"
+                                                            alt="" class="top-header__social-img"></a></li>
+                                                <li class="top-header__social-item"><a href="#"
+                                                        class="top-header__social-link"><img src="images/instagram.svg"
+                                                            alt="" class="top-header__social-img"></a></li>
+                                                <li class="top-header__social-item"><a href="#"
+                                                        class="top-header__social-link"><img src="images/vk.svg" alt=""
+                                                            class="top-header__social-img"></a></li>
+                                            </ul>
+                                            <a href="tel:+78129079583" class="top-header__social-phone">+7 (812)
+                                                907-95-83</a>
+                                        </div>
+                                        <a href="mailto:krasnaya.raketa1@gmail.com"
+                                            class="top-header__social-mail">krasnaya.raketa1@gmail.com</a>
+                                    </div>
+                                    <div class="top-header__account">
+                                        <button class="top-header__account-btn"><img src="images/user.svg"
+                                                alt="personal account" class="top-header__account-img"></button>
+                                    </div>
+                                </div>
+                                <div class="header__hamburger">
+                                    <button class="btn-menu" type="button">
+                                        <span class="btn-menu__box">
+                                            <span class="btn-menu__inner"></span>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__bottom bottom-header">
+                        <div class="container">
+                            <div class="bottom-header__content">
+                                <ul class="bottom-header__menu-list menu-list">
+                                    <li class="menu-list__item"><a href="about.html" class="menu-list__link">О нас</a>
+                                    </li>
+                                    <li class="menu-list__item"><a href="training.html"
+                                            class="menu-list__link">Тренировки</a></li>
+                                    <li class="menu-list__item"><a href="prices.html" class="menu-list__link">Цены</a>
+                                    </li>
+                                    <li class="menu-list__item"><a href="schedule.html"
+                                            class="menu-list__link">Расписание</a></li>
+                                    <li class="menu-list__item"><a href="coaches.html"
+                                            class="menu-list__link">Тренеры</a></li>
+                                    <li class="menu-list__item"><a href="attributes.html"
+                                            class="menu-list__link">Атрибутика</a></li>
+                                    <li class="menu-list__item"><a href="reviews.html"
+                                            class="menu-list__link">Отзывы</a></li>
+                                    <li class="menu-list__item"><a href="contacts.html"
+                                            class="menu-list__link">Контакты</a></li>
+                                </ul>
+                                <h3 class="top-header__logo-title lg">Хоккейная школа
+                                    “Красная Ракета”
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="about schedule">
+                    <div class="container">
+                        <div class="about__btns">
+                            <a href="index.html" class="about__btn about__index">Главная</a>
+                            <span class="about__btn">/</span>
+                            <a href="schedule.html" class="about__btn about__btn-active">Расписание</a>
+                        </div>
+
+                        <div class="schedule__content">
+                            <div class="schedule__inputs">
+                                <form>
+                                    <div class="__select" data-state="">
+                                        <div class="__select__title" data-default="Option 0">Выберите группу</div>
+                                        <div class="__select__content">
+                                            <input id="singleSelect0" class="__select__input" type="radio"
+                                                name="singleSelect" checked />
+                                            <label for="singleSelect0" class="__select__label">Группа №1</label>
+                                            <input id="singleSelect1" class="__select__input" type="radio"
+                                                name="singleSelect" />
+                                            <label for="singleSelect1" class="__select__label">Группа №2</label>
+                                            <input id="singleSelect2" class="__select__input" type="radio"
+                                                name="singleSelect" />
+                                            <label for="singleSelect2" class="__select__label">Группа №3</label>
+                                            <input id="singleSelect3" class="__select__input" type="radio"
+                                                name="singleSelect" />
+                                            <label for="singleSelect3" class="__select__label">Группа №4</label>
+                                            <input id="singleSelect4" class="__select__input" type="radio"
+                                                name="singleSelect" />
+                                            <label for="singleSelect4" class="__select__label">Группа №4
+                                                (Взрослые)</label>
+                                        </div>
+                                    </div>
+                                </form>
+                                <input placeholder="Дата" id="inputDate" type="date" class="schedule__date">
+                            </div>
+                            <table class="schedule__table">
+                                <tr class="schedule__row1">
+                                    <td class="schedule__col">Понедельник</td>
+                                    <td class="schedule__col">Вторник </td>
+                                    <td class="schedule__col">Среда</td>
+                                    <td class="schedule__col">Четверг</td>
+                                    <td class="schedule__col">Пятница</td>
+                                    <td class="schedule__col">Суббота</td>
+                                    <td class="schedule__col">Воскресенье</td>
+                                </tr>
+                                <tr class="schedule__row1">
+                                    <td class="schedule__col">4 Октября 2021</td>
+                                    <td class="schedule__col">5 Октября 2021</td>
+                                    <td class="schedule__col">6 Октября 2021</td>
+                                    <td class="schedule__col">7 Октября 2021</td>
+                                    <td class="schedule__col">8 Октября 2021</td>
+                                    <td class="schedule__col">9 Октября 2021</td>
+                                    <td class="schedule__col">10 Октября 2021</td>
+                                </tr>
+                                <tr class="schedule__row2">
+                                    <td class="schedule__col">19:00 - 20:00
+                                        ледовые тренировки (№1, №2, №3)
+                                        пр.Культуры 61</td>
+                                    <td class="schedule__col">18:45 - 19:45
+                                        ОФП (№1, №4)
+                                        бросковая тренировка (№2)
+                                        пр.Культуры 61</td>
+                                    <td class="schedule__col">19:00 - 20:00
+                                        ледовые тренировки (№1, №2, №3)
+                                        пр.Культуры 61</td>
+                                    <td class="schedule__col">18:45 - 19:45
+                                        бросковая тренировка (№1, №4)
+                                        пр.Культуры 61</td>
+                                    <td class="schedule__col">19:00 - 20:00
+                                        ледовые тренировки (№1, №2, №3)
+                                        пр.Культуры 61</td>
+                                    <td class="schedule__col">
+
+                                    </td>
+                                    <td class="schedule__col"></td>
+                                </tr>
+                                <tr class="schedule__row2">
+                                    <td class="schedule__col">20:15 - 21:15
+                                        бросковая тренировка (№1, №4)
+                                        пр.Культуры 61</td>
+                                    <td class="schedule__col">20:00 - 21:00
+                                        ледовые тренировки (№1, №2, №4)
+                                        пр.Культуры 61</td>
+                                    <td class="schedule__col">20:15 - 21:15
+                                        ОФП (№2, №3)
+                                        пр.Культуры 61</td>
+                                    <td class="schedule__col">20:00 - 21:00
+                                        ледовые тренировки (№1, №4)
+                                        пр.Культуры 61</td>
+                                    <td class="schedule__col">
+                                        19:00 - 20:00
+                                        ледовые тренировки (№4)
+                                        пр.Культуры 61</td>
+                                    <td class="schedule__col"></td>
+                                    <td class="schedule__col"></td>
+                                </tr>
+                                <tr class="schedule__row2">
+                                    <td class="schedule__col"></td>
+                                    <td class="schedule__col"></td>
+                                    <td class="schedule__col"></td>
+                                    <td class="schedule__col"></td>
+                                    <td class="schedule__col"></td>
+                                    <td class="schedule__col"></td>
+                                    <td class="schedule__col"></td>
+                                </tr>
+                                <tr class="schedule__row2">
+                                    <td class="schedule__col"></td>
+                                    <td class="schedule__col"></td>
+                                    <td class="schedule__col"></td>
+                                    <td class="schedule__col"></td>
+                                    <td class="schedule__col"></td>
+                                    <td class="schedule__col"></td>
+                                    <td class="schedule__col"></td>
+                                </tr>
+                            </table>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </header>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer__logo">
+                        <a href="#" class="logo2"><img src="images/footer-logo.png" alt="" class="footer__logo-img">
+                        </a>
+                        <div class="footer__logo-blur"></div>
+                        <div class="footer__logo-item">
+                            <h3 class="footer__logo-title">Хоккейная школа
+                                “Красная Ракета”
+                            </h3>
+                            <p class="footer__logo-text">Санкт-Петербург</p>
+                        </div>
+                    </div>
+                    <div class="footer__menu">
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item"><a href="about.html" class="footer__menu-link">О нас</a>
+                            </li>
+                            <li class="footer__menu-item"><a href="training.html"
+                                    class="footer__menu-link">Тренировки</a>
+                            </li>
+                            <li class="footer__menu-item"><a href="prices.html" class="footer__menu-link">Цены</a></li>
+                            <li class="footer__menu-item"><a href="schedule.html"
+                                    class="footer__menu-link">Расписание</a></li>
+                        </ul>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item"><a href="coaches.html" class="footer__menu-link">Тренеры</a>
+                            </li>
+                            <li class="footer__menu-item"><a href="attributes.html"
+                                    class="footer__menu-link">Атрибутика</a>
+                            </li>
+                            <li class="footer__menu-item"><a href="reviews.html" class="footer__menu-link">Отзывы</a>
+                            </li>
+                            <li class="footer__menu-item"><a href="contacts.html" class="footer__menu-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__contacts">
+                        <div class="footer__social">
+                            <div class="footer__social-links">
+                                <ul class="footer__social-list">
+                                    <li class="footer__social-item"><a href="#" class="footer__social-link"><img
+                                                src="images/whatsapp.svg" alt="" class="footer__social-img"></a></li>
+                                    <li class="footer__social-item"><a href="#" class="footer__social-link"><img
+                                                src="images/instagram.svg" alt="" class="footer__social-img"></a></li>
+                                    <li class="footer__social-item"><a href="#" class="footer__social-link"><img
+                                                src="images/vk.svg" alt="" class="footer__social-img"></a></li>
+                                </ul>
+                                <a href="tel:+78129079583" class="footer__social-phone">+7 (812) 907-95-83</a>
+                            </div>
+                            <a href="mailto:krasnaya.raketa1@gmail.com"
+                                class="footer__social-mail">krasnaya.raketa1@gmail.com</a>
+                        </div>
+                        <p class="footer__adress">ООО Красная Ракета
+                            пр. Культуры 61
+                            ИНН: 7814657052</p>
+                    </div>
+                </div>
+                <div class="footer__content2">
+                    <p class="footer__adress footer__adress2">ООО Красная Ракета
+                        пр. Культуры 61
+                        ИНН: 7814657052</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+
+    <div class="popup popup-menu">
+        <div class="popup__wrapper popup-menu__wrapper">
+            <div class="popup__inner popup-menu__inner">
+                <div class="popup__content popup-menu__content">
+                    <button class="btn-close popup__btn-close popup-close"></button>
+                    <div class="popup-menu__logo">
+                        <a href="#" class="logo"><img src="images/logo.png" alt=""
+                                class="popup-menu__logo-img logo__img"></a>
+                    </div>
+                    <ul class="popup-menu__list">
+                        <li class="popup-menu__list-item"><a href="about.html" class="popup-menu__list-link">О
+                                нас</a></li>
+                        <li class="popup-menu__list-item"><a href="training.html"
+                                class="popup-menu__list-link">Тренировки</a></li>
+                        <li class="popup-menu__list-item"><a href="prices.html" class="popup-menu__list-link">Цены</a>
+                        </li>
+                        <li class="popup-menu__list-item"><a href="schedule.html"
+                                class="popup-menu__list-link">Расписание</a></li>
+                        <li class="popup-menu__list-item"><a href="coaches.html"
+                                class="popup-menu__list-link">Тренеры</a></li>
+                        <li class="popup-menu__list-item"><a href="attributes.html"
+                                class="popup-menu__list-link">Атрибутика</a></li>
+                        <li class="popup-menu__list-item"><a href="reviews.html"
+                                class="popup-menu__list-link">Отзывы</a></li>
+                        <li class="popup-menu__list-item"><a href="contacts.html"
+                                class="popup-menu__list-link">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
